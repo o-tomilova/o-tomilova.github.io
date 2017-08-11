@@ -1,0 +1,63 @@
+header {
+	padding: 10px 10px;
+	display: inline-block;
+	width: 100%;
+	color: #F6F6F6;
+	background-color: #2B2B2B;
+}
+
+header a {
+	padding: 0 15px;
+}
+
+.headRight {
+	float: right;
+}
+
+.tableContainer {
+	width: 80%;
+}
+
+.btn-sm {
+	min-width: 60px;
+}
+
+select {
+	min-width: 150px;
+	max-width: 300px;
+}
+input {
+	max-width: 300px;
+}
+
+textarea {
+	max-width: 300px;
+	max-height: 100px;
+	margin-bottom: 20px;
+}
+
+.form-inline {
+	display: inline-block;
+}
+
+input[type="submit"] {
+	font-size: 20px;
+	outline: none;
+	width: 90px;
+	height: 30px;
+}
+
+.hideBlock {
+	display: none;
+}
+
+.showBlock {
+	display: block;
+}
+
+#addBlock {
+	padding: 20px 50px;
+	border-top: 5px solid #DE1B1B;
+	border-bottom: 5px solid #DE1B1B;
+	background-color: #F6F6F6;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Diploma</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+
+		<button id="addProduct" class="btn btn-primary btn-md"> Add product</button>
+
+	<form class="form-inline">
+		<div class="form-group">
+			<label for="categorySort">Sort by category</label> 
+			<select class="form-control" id="categorySort">
+				<option value="defaultCat">Default</option>
+				<option value="clothes">Clothes</option>
+				<option value="shoes">Shoes</option>
+				<option value="accessories">Accessories</option>
+				<option value="bags">Bags</option>
+			</select>
+			<label for="priceSort">Sort by price</label> 
+			<select class="form-control" id="priceSort">
+				<option value="defaultPrice">Default</option>
+				<option value="descending">Bigger price first</option>
+				<option value="ascending">Lower price first</option>
+			</select>
+		</div>
+	</form>
+
+	</header>
+	<div id="addBlock" class="hideBlock">
+		<h2>Adding new Product</h2>
+		<form id="addForm" name="addForm">
+			<div class="form-group">
+				<div>
+					<label for="prodName"> Product name </label> 
+					<input class="form-control" type="text" name="name" id="prodName">
+				</div>
+				<div>
+					<label for="selCat"> Choose category </label> 
+					<select class="form-control" name="category" id="selCat">
+						<option>clothes</option>
+						<option>shoes</option>
+						<option>accessories</option>
+						<option>bags</option>
+					</select>
+				</div>
+				<div class="has-feedback">
+					<label for="priceSet"> Set price $</label>
+					<input class="form-control" type="text" name="price" id="priceSet">
+				</div>
+				<div>
+					<label for="descSet"> Write a description</label>
+					<textarea class="form-control" name="desc" id="descSet"></textarea>
+				</div>
+					<input class="btn btn-primary btn-sm" disabled="true" type="button" id="submit" name="add" value="Add">
+					<input class="btn btn-primary btn-sm" type="button" id="cancel" name="cancel" value="Cancel">
+			</div>
+		</form>			
+	</div>
+
+	<div id="tableContainer" class="table-responsive">
+	</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="scripts.js" type="text/javascript"></script>	
+</body>
+</html>
